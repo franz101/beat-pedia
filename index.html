@@ -77,20 +77,22 @@
                 </div>
             </div>
             <div class="controls">
-                <div class="flex items-center justify-between  space-x-4 pb-4"">
-                    <button id="togglePlayback" class="bg-teal-700 hover:bg-teal-600 text-white font-bold py-2 px-4 rounded w-24">
+                <div class="pb-4">
+                    <button id="togglePlayback"
+                        class="bg-teal-700 hover:bg-teal-600 text-white font-bold py-2 px-4 rounded mr-2 w-24">
                         Play
                     </button>
-                    <div class="flex items-center">
-                        <input id="bpm" type="number" min="60" max="240" value="88" class="p-2 border border-gray-700 text-black w-16" />
-                        <span class="ml-2">BPM</span>
+                    <div class="inline-block">
+                        <input id="bpm" type="number" min="60" max="240" value="88"
+                            class="mr-4 p-2 border border-gray-700 text-black w-16" />
+                        <span>BPM</span>
+                        <select id="templates" class="max-w-40 ml-20 mr-4 p-2 border border-gray-700 text-black w-300 appearance-none row-start-1 col-start-1 bg-slate-50 dark:bg-slate-800">
+                            <option value="" disabled selected>Select from a template</option>
+                           
+                          </select>
                     </div>
-                    <select id="templates" class="p-2 border border-gray-700 text-black w-50 appearance-none bg-slate-50 dark:bg-slate-800">
-                        <option value="" disabled selected>Select from a template</option>
-                        <!-- other options -->
-                    </select>
+                   
                 </div>
-                
                 <div class="pb-2 flex justify-between">
                     <button data-sound="kick" class="bg-green-500 hover:bg-green-700 text-black py-2 px-2 rounded">
                         <span>Kick (c)</span>
@@ -114,7 +116,7 @@
                 </div>
                
             </div>
-            <textarea id="pattern" placeholder="BD |X---|----|X---|----|&#10;SN |----|X---|----|X---|&#10;HH |X-X-|X-X-|X-X-|X-X-|" ></textarea>
+            <textarea id="pattern" ></textarea>
             <button id="play-pattern" class="bg-green-500 hover:bg-green-700 text-black py-2 px-2 rounded">
                 <span>Load pattern</span>
             </button>
